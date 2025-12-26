@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "telegram-terminal-client"
+version = "1.0.0"
+description = "Production-grade async Telegram client with MTProto protocol handling"
+authors = ["SHAROFIDDIN"]
+readme = "README.md"
+packages = [{include = "telegram_messenger.py"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+telethon = "^1.34.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.0"
+pytest-mock = "^3.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
