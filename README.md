@@ -80,8 +80,8 @@ This project demonstrates production-grade backend engineering practices suitabl
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
-cd telegram-terminal-client
+git clone https://github.com/Aomine01/smsReTg.git
+cd smsReTg
 
 # 2. Install Poetry (if not already installed)
 pip install poetry
